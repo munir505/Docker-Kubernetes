@@ -1,6 +1,6 @@
 # Docker-Kubernetes
 
-#### First Install Docker
+#### Installaling Docker
 This command installs docker
 ```bash
 sudo yum install docker -y
@@ -19,3 +19,12 @@ In order to get docker working you will need to exit and re enter the machine
 ```bash
 exit
 ```
+TO start docker, only will work if you exit after intalling
+```bash
+sudo service docker start
+```
+To check wheter docker is running or not
+```bash
+sudo service docker status
+```
+#### Installing and Configuring Kubernetes
