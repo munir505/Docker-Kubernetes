@@ -1,5 +1,9 @@
 # Docker-Kubernetes
-
+#### Gcloud Commands
+To get permissions to do gcloud commands
+```bash
+gcloud auth login
+```
 #### Installaling Docker
 This command installs docker
 ```bash
@@ -28,3 +32,17 @@ To check wheter docker is running or not
 sudo service docker status
 ```
 #### Installing and Configuring Kubernetes
+##### Installing Kubectl
+Copy and paste this in to a bash file, then run that file as sudo ```bash sudo ./kube.bash ```
+```bash
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+yum install -y kubectl
+```
