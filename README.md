@@ -33,7 +33,7 @@ sudo service docker status
 ```
 #### Installing and Configuring Kubernetes
 ##### Installing Kubectl
-Copy and paste this in to a bash file, then run that file as sudo ```bash sudo ./kube.bash ```
+Copy and paste this in to a bash file, then run that file as sudo ```sudo ./kube.bash```
 ```bash
 cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
