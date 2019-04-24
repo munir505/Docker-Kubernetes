@@ -23,7 +23,7 @@ In order to get docker working you will need to exit and re enter the machine
 ```bash
 exit
 ```
-TO start docker, only will work if you exit after intalling
+To start docker, only will work if you exit after intalling
 ```bash
 sudo service docker start
 ```
@@ -33,6 +33,7 @@ sudo service docker status
 ```
 #### Docker
 (For go install https://linuxize.com/post/how-to-install-go-on-centos-7/)
+
 #### Installing and Configuring Kubernetes
 ##### Installing Kubectl
 Copy and paste this in to a bash file, give the file executable permissions ```chmod +x <filename>.bash```, then run that file as sudo ```sudo ./<filename>.bash```
