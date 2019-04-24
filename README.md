@@ -31,6 +31,8 @@ To check wheter docker is running or not
 ```bash
 sudo service docker status
 ```
+#### Docker
+(For go install https://linuxize.com/post/how-to-install-go-on-centos-7/)
 #### Installing and Configuring Kubernetes
 ##### Installing Kubectl
 Copy and paste this in to a bash file, give the file executable permissions ```chmod +x <filename>.bash```, then run that file as sudo ```sudo ./<filename>.bash```
@@ -45,4 +47,9 @@ repo_gpgcheck=1
 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOF
 yum install -y kubectl
+```
+##### Creating Cluster
+This creates the cluster
+```bash
+gcloud container clusters create <name> --zone <zone>
 ```
