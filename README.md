@@ -54,3 +54,18 @@ This creates the cluster
 ```bash
 gcloud container clusters create <name> --zone <zone>
 ```
+#### GCR (Container Registery)
+Run this to give permissions, to allow to push to GCR
+```bash
+gcloud auth configure-docker
+```
+Tag the image as followed
+```bash
+#eu.gcr.io/ops-munir-kakar/go-server
+docker tag eu.gcr.io/ops-munir-kakar/go-server
+```
+Using this command push to GCR
+```bash
+docker push eu.gcr.io/ops-munir-kakar/go-server
+```
+
