@@ -32,7 +32,7 @@ To check wheter docker is running or not
 sudo service docker status
 ```
 #### Docker
-(For "GO" install https://linuxize.com/post/how-to-install-go-on-centos-7/)
+(To install "GO" go to https://linuxize.com/post/how-to-install-go-on-centos-7/)
 
 #### Installing and Configuring Kubernetes
 ##### Installing Kubectl
